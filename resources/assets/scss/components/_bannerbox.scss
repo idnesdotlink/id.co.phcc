@@ -1,0 +1,67 @@
+.bannerbox {
+    @include make-row;
+      @media (min-width: map_get($grid-breakpoints,"lg")){
+        display: flex;
+      }
+}
+.bannerbox > div {
+    @include make-col-ready();
+
+    @include media-breakpoint-up("md") {
+        @include make-col(12);
+    }
+    @include media-breakpoint-up("lg") {
+        @include make-col(4);
+    }
+    color: white;
+    padding: 10px;
+}
+
+.bannerbox > div:nth-child(3n+1) {
+
+}
+
+.bannerbox > div:nth-child(3n+2) {
+
+}
+
+.bannerbox > div:nth-child(3n+3) {
+
+}
+
+.bannerbox > div::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    z-index: -5;
+}
+
+.bannerbox > div:nth-child(3n+1)::after {
+    background: $lavender_rose;
+    background: rgba($lavender_rose, 0.4);
+}
+
+.bannerbox > div:nth-child(3n+2)::after {
+    background: $silver_pink;
+    background: rgba($silver_pink, 0.4);
+}
+
+.bannerbox > div:nth-child(3n+3)::after {
+    background: $cyber_grape;
+    background: rgba($cyber_grape, 0.4);
+}
+
+.bannerbox .carousel-indicators {
+    bottom: auto;
+    left: auto;
+    top: -40px;
+    right: 10px;
+    margin: 0;
+}
+
+.bannerbox .carousel-indicators li {
+    height: 30px;
+}

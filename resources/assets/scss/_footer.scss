@@ -1,0 +1,41 @@
+.footer>div:first-child {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer .copyright {
+  color: $hot_pink;
+  font-size: 12px;
+  padding-top: 13px;
+  background-color: $gray-300;
+}
+.footer h3.title {
+  border-bottom: 1px dotted #ccc;
+  display: inline-block;
+}
+.footer h3::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.footer .copyright a {
+  color: $hot_pink;
+}
+.app>.footer {
+  background: $middle_purple;
+  //background: linear-gradient(135deg, #cc146d 0%, #ee82b1 100%);
+      background-image: linear-gradient(45deg, $super_pink 0%, $dark_lavender 100%);
+  color: $white;
+}
+
+.copyright a img {
+  opacity: 0.5;
+}
+
+.copyright a:hover img {
+  opacity: 1;
+}

@@ -1,0 +1,46 @@
+@import "bootstrap";
+
+@import "components/stream";
+
+@import "footer";
+@import "vuebar";
+// @import "~aos/dist/aos.css";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#app {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+}
+.navigation {
+
+}
+.home-slider {
+  height: auto;
+}
+.content-a {
+  height: 1000px;
+  background: transparent;
+}
+.content-b {
+  height: 100px;
+  background: transparent;
+}

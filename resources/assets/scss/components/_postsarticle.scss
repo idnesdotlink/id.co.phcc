@@ -1,0 +1,72 @@
+.post {
+    @include make-row;
+    @media (min-width: map_get($grid-breakpoints,"lg")){
+      display: flex;
+    }
+    padding-top: 20px;
+    border-top: 1px dashed $cyber_grape;
+}
+
+li.post:first-child {
+    border-top: 0 none;
+}
+
+.post .meta {
+    @include make-col-ready();
+    @include media-breakpoint-up("md") {
+        @include make-col(2);
+    }
+}
+
+.post section {
+    @include make-col-ready();
+    @include media-breakpoint-up("md") {
+        @include make-col(10);
+    }
+}
+
+
+
+
+
+h1, h2, h3 {
+    font-family: $font-family-heading;
+    font-weight: bold;
+}
+
+time {
+    display: block;
+}
+
+time::after {
+    clear: both;
+    display: none;
+    content: " ";
+}
+
+time .date {
+    width: 100%;
+    display: block;
+    background-color: $hot_pink;
+    color: $white;
+    text-align: center;
+    font-size: 4rem;
+}
+time .year {
+    width: 60%;
+    display: block;
+    background-color: $cyber_grape;
+    float: left;
+    font-size: 1.2rem;
+    text-align:center;
+}
+
+time .month {
+    width: 40%;
+    background-color: $silver_pink;
+    display: block;
+    float: left;
+    clear: both;
+    font-size: 1.2rem;
+    text-align: center;
+}
